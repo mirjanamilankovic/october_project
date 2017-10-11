@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+body {
+    margin:0;
+    padding:0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#796b7b+2,30697d+47,826b7b+100 */
+background: #796b7b; /* Old browsers */
+background: -moz-linear-gradient(45deg, #796b7b 2%, #30697d 47%, #826b7b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #796b7b 2%,#30697d 47%,#826b7b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #796b7b 2%,#30697d 47%,#826b7b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796b7b', endColorstr='#826b7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+header .wrap {
+    min-height:1021px;
+}
+.wrap {
+    margin:0 auto;
+    position:relative;
+    max-width: 960px;
+}
+.header__logo {
+   position: absolute;
+   left: 0;
+   top:92px;
+}
+.navigation {
+    width:53px;
+    height:61px;
+    border:1px solid white;
+    position: absolute;
+    right:0;
+    top:92px;
+}
+
+.line1 {
+    width: 40px;
+    height: 0px;
+    border:1px solid white;
+    position: absolute;
+    right:7px;
+    top:112px;
+    
+}
+
+.line2 {
+    width: 40px;
+    height: 0px;
+    border:1px solid white;
+    position: absolute;
+    right:7px;
+    top:124px;
+    
+}
+.line3 {
+    width: 40px;
+    height: 0px;
+    border:1px solid white;
+    position: absolute;
+    right:7px;
+    top:136px;
+    
+}
+
+.header__content {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+} 
+
+        .header__title {
+            padding:30px 32px;
+            text-transform: uppercase;
+            border-top:solid #9eb4be 1px;
+            border-bottom:solid #9eb4be 1px;
+            font-weight: normal;
+        }
+
+        .header__subtitle {
+            padding:0 10px;
+            color:#9eb4be;
+            word-spacing: 5px;
+        }
+@media (max-width:570px) {
+    .header__content {
+        margin:0;
+    }
+}
