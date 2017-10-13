@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway|Roboto:400,700,900');
 body {
     margin:0;
     padding:0;
@@ -14,13 +14,18 @@ background: linear-gradient(45deg, #796b7b 2%,#30697d 47%,#826b7b 100%); /* W3C,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796b7b', endColorstr='#826b7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-header .wrap {
-    min-height:1021px;
-}
+/* Start wrap */
 .wrap {
     margin:0 auto;
     position:relative;
     max-width: 960px;
+}
+/*End wrap */
+
+/*Start Header*/
+
+header .wrap {
+    min-height:1021px;
 }
 .header__logo {
    position: absolute;
@@ -28,42 +33,42 @@ header .wrap {
    top:92px;
 }
 .navigation {
-    width:53px;
-    height:61px;
-    border:1px solid white;
+    width:60px;
+    height:60px;
+    border:3px solid #d3d3d8;
     position: absolute;
     right:0;
     top:92px;
 }
 
-.line1 {
-    width: 40px;
-    height: 0px;
-    border:1px solid white;
-    position: absolute;
-    right:7px;
-    top:112px;
-    
-}
+        .line1 {
+            width: 40px;
+            height: 0px;
+            border:2px solid #f0f0f2;
+            position: absolute;
+            right:10px;
+            top:112px;
+            
+        }
 
-.line2 {
-    width: 40px;
-    height: 0px;
-    border:1px solid white;
-    position: absolute;
-    right:7px;
-    top:124px;
-    
-}
-.line3 {
-    width: 40px;
-    height: 0px;
-    border:1px solid white;
-    position: absolute;
-    right:7px;
-    top:136px;
-    
-}
+        .line2 {
+            width: 40px;
+            height: 0px;
+            border:2px solid #f0f0f2;
+            position: absolute;
+            right:10px;
+            top:124px;
+            
+        }
+        .line3 {
+            width: 40px;
+            height: 0px;
+            border:2px solid #f0f0f2;
+            position: absolute;
+            right:10px;
+            top:136px;
+            
+        }
 
 .header__content {
     position: absolute;
@@ -71,23 +76,115 @@ header .wrap {
     left:50%;
     transform: translate(-50%,-50%);
     color:white;
+    min-width:560px;
 } 
 
         .header__title {
-            padding:30px 32px;
+            padding:35px 0;
             text-transform: uppercase;
             border-top:solid #9eb4be 1px;
             border-bottom:solid #9eb4be 1px;
             font-weight: normal;
+            font-family: Raleway;
+            font-weight:bold;
+            font-size:65px;
+            letter-spacing: 8px;
+            text-align: center;
         }
 
         .header__subtitle {
-            padding:0 10px;
             color:#9eb4be;
             word-spacing: 5px;
+            letter-spacing: 9px;
+            text-align: center;
         }
 @media (max-width:570px) {
     .header__content {
-        margin:0;
+        min-width: 270px;
     }
 }
+
+/*End Header */
+
+/*Start Article */
+/*START INTRODUCTION */
+
+.introduction {
+    background-color: #fff;
+    min-height:700px;
+    font-family: Roboto;
+    position:relative;
+}
+
+        .introduction__picture {
+            position:absolute;
+            bottom:0;
+            left:0;
+        }
+
+        .introduction__description {
+            position: absolute;
+            right:0;
+            top:170px;
+            color:#7c7c7c;
+            text-shadow: 0 0 0 #000;
+            width:50%;
+            
+        }
+
+            .introduction__title {
+                font-size:18px;
+                font-weight: bold;
+            }
+
+                .introduction__content1 {
+                    font-size: 16px;
+                }
+
+                .introduction__content2 {
+                    font-size: 16px;
+                    margin-top:30px;
+                    margin-bottom: 0;
+
+                }
+
+
+            .introduction__button {
+                width:200px;
+                height: 50px;
+                background-color: #ff2b4a;
+                color:#fff;
+                text-decoration: none;
+                border:none;
+                text-align: center;
+                display: inline-block;
+                font-size:16px;
+                margin-top:65px;
+            }
+
+    /*start responsiveintroduction here */
+
+    /*End responsive introduction here*/
+
+/*END INTRODUCTION */
+
+/*START WORKING PROCESS */
+
+.process {
+    min-height: 670px;
+    background-color:#f6f6f6;
+
+}
+    .process__title {
+        margin:0;
+    }
+
+
+
+
+
+
+
+
+/*END WORKING PROCESS*/
+/*End Article*/
