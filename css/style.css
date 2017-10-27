@@ -112,7 +112,7 @@ header .wrap {
         .header__subtitle {
             color:#9eb4be;
             word-spacing: 5px;
-            letter-spacing: 9px;
+            letter-spacing: 7px;
             text-align: center;
         }
 @media (max-width:960px) {
@@ -157,39 +157,39 @@ header .wrap {
 
 .introduction {
     background-color: #fff;
-    min-height:700px;
     font-family: Roboto;
-    position:relative;
+    display: flex;
+    padding:40px 40px 0 40px;
 }
 
         .introduction__picture {
-            position:absolute;
-            bottom:-19px;
-            left:0;
-            max-width: 100%;
-            height: auto;
+         background:url(../images/mee.jpg);
+         width: 40%;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         margin:0;
+         height: 350px;
         }
 
         .introduction__description {
-            position: absolute;
-            right:0;
-            top:150px;
-            color:#7c7c7c;
-            text-shadow: 0 0 0 #000;
-            width:50%;
+            width:60%;
+            padding:16px;
+            padding-bottom: 0;
+            color:#383232;
             
         }
 
             .introduction__title {
                 font-size:18px;
                 font-weight: bold;
-                margin-bottom:50px;
+                margin-bottom:40px;
             }
 
                 .introduction__content1 {
                     font-size: 16px;
                     line-height: 20px;
-                    margin-top:0;
+                    margin:0;
                 }
 
                 .introduction__content2 {
@@ -201,79 +201,190 @@ header .wrap {
                 }
 
 
-            .introduction__button {
-                width:200px;
-                height: 50px;
-                background-color: #ff2b4a;
-                color:#fff;
-                text-decoration: none;
-                border:none;
-                text-align: center;
-                display: inline-block;
-                font-size:16px;
-                margin-top:65px;
-            }
-
     /*start responsiveintroduction here */
-@media (max-width:890px) and (min-width:650px) {
+@media (max-width:760px) and (min-width:470px) {
     .introduction__title {
-        font-size: 18px;
+        font-size: 15px;
+        text-align: center;
     }
 
-            .introduction__content1 {
-                font-size: 12px;
-            }
+        .introduction__content1 {
+            font-size: 12px;
+        }
 
-            .introduction__content2 {
-                font-size: 12px;
-                margin-top:0;
-            }
-
-    .introduction__button {
-        float:right;
-        margin-right: 16px;
-    }
+        .introduction__content2 {
+            font-size: 12px;
+        }
 }
 
-@media (max-width:649px) and (min-width:510px){
-    .introduction__description {
-        width:35%;
-        top:0;
-    }
-    .introduction__title {
-        font-size: 14px;
+@media (max-width:469px) {
+    .introduction {
+        flex-direction: column;
+        width:auto;
+        padding:0;
     }
 
+    .introduction__picture {
+        width:auto;
+        min-height: 300px;
+        background-size: contain;
+        margin-top:20px;
+    }
+
+    .introduction__description {
+        width:auto;
+    }
+
+        .introduction__title {
+            font-size: 15px;
+            margin-bottom:20px;
+            text-align: center;
+        }
+
             .introduction__content1 {
-                font-size: 11px;
+                font-size: 12px;
             }
 
             .introduction__content2 {
-                font-size: 11px;
-                margin-top:0;
+                font-size: 12px;
+                margin-top:15px;
             }
 
-    .introduction__button {
-        float:right;
-        margin: 233px 16px;
-        width:177px;
-        height: 45px;
-    }
+  
+    
 }
     /*End responsive introduction here*/
 
 /*END INTRODUCTION */
 
-/*START WORKING PROCESS */
 
+
+
+/*START WORKING PROCESS */
 .process {
-    min-height: 670px;
     background-color:#f6f6f6;
 
 }
-    .process__title {
-       
+
+    .process__description {
+        padding:120px 16px 0 16px;
+        font-family: Roboto;
     }
+        .process__title {
+            text-align:center;
+            color:#99ddf9;
+            font-weight: bold; 
+            margin:0;  
+            font-weight: normal;
+            font-size: 40px;
+        }
+
+        .process__subtitle {
+            text-align: center;
+            font-weight: normal;
+            color:#383232;
+            color:#;
+            padding-top:40px;
+            margin-top:0;
+            font-size:16px;
+        }
+
+    .working__process {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 16px 0 16px;
+        flex-wrap: wrap;
+    }
+
+        .working__process__box{
+            background:blue;
+            flex-basis: 24%;
+            color:#fff;
+            min-height:200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+            .working__process__box:nth-child(1) {
+                background-color: #10c6fc;
+            }
+
+            .working__process__box:nth-child(2) {
+                background-color: #835aeb;
+            }
+
+            .working__process__box:nth-child(3) {
+                background-color: #002453;
+            }
+
+            .working__process__box:nth-child(4) {
+                background-color: #ff2b4a;
+            }
+
+/* START RESPONSIVE FOR WORKING PROCESS*/
+@media only screen and (max-width:760px) and (min-width:420px) {
+
+    .working__process__box {
+        flex-basis: 48%;
+        margin:1%;
+    }
+
+    .process__title {
+        font-size:35px;
+    }
+}
+
+@media (max-width:760px) and (min-width:470px) {
+    .process__description {
+        padding-top:30px;
+    }
+}
+
+@media only screen and (max-width:419px) {
+
+.working__process {
+    padding-top:20px;
+}
+
+    .working__process__box {
+        flex-basis: 100%;
+        margin-top:4%;
+    }
+
+        .working__process__box:nth-child(1) {
+            margin-top:0;
+        }
+
+        .working__process__box:nth-child(4) {
+            margin-bottom: 10px;
+        }
+
+    .process__description {
+        padding-top: 30px;
+    }
+
+        .process__title {
+            font-size: 30px;
+        }
+
+        .process__subtitle {
+            padding-top:20px;
+            font-size: 12px;
+        }
+}
+
+
+
+/* END RESPONSIVE FOR WORKING PROCESS*/
+
+
+
+
+
+        
 
 
 
