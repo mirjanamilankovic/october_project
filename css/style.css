@@ -26,6 +26,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796b7b', end
     margin:0 auto;
     position:relative;
     max-width: 960px;
+    padding:0 16px;
 }
 /*End wrap */
 
@@ -263,12 +264,13 @@ header .wrap {
 /*START WORKING PROCESS */
 .process {
     background-color:#f6f6f6;
+    padding:125px 0;
 
 }
 
     .process__description {
-        padding:120px 16px 0 16px;
         font-family: Roboto;
+        padding:0 16px;
     }
         .process__title {
             text-align:center;
@@ -276,7 +278,10 @@ header .wrap {
             font-weight: bold; 
             margin:0;  
             font-weight: normal;
-            font-size: 40px;
+            font-size: 37px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
         }
 
         .process__subtitle {
@@ -286,7 +291,7 @@ header .wrap {
             color:#;
             padding-top:40px;
             margin-top:0;
-            font-size:16px;
+            font-size:18px;
         }
 
     .working__process {
@@ -305,6 +310,9 @@ header .wrap {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding:10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
            
         }
 
@@ -333,12 +341,16 @@ header .wrap {
     }
 
     .process__title {
-        font-size:35px;
+        font-size:28px;
+    }
+
+    .process__subtitle {
+        font-size: 15px;
     }
 }
 
 @media (max-width:760px) and (min-width:470px) {
-    .process__description {
+    .process {
         padding-top:30px;
     }
 }
@@ -362,12 +374,12 @@ header .wrap {
             margin-bottom: 10px;
         }
 
-    .process__description {
+    .process {
         padding-top: 30px;
     }
 
         .process__title {
-            font-size: 30px;
+            font-size: 22px;
         }
 
         .process__subtitle {
@@ -380,6 +392,92 @@ header .wrap {
 
 /* END RESPONSIVE FOR WORKING PROCESS*/
 
+
+/*START WORK AND EDUCATION SECTION */
+
+.info {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#796b7b+2,30697d+47,826b7b+100 */
+    background: #796b7b; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #796b7b 2%, #30697d 47%, #826b7b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #796b7b 2%,#30697d 47%,#826b7b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #796b7b 2%,#30697d 47%,#826b7b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796b7b', endColorstr='#826b7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    font-family: Roboto;
+    }
+
+    .info__blocks {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color:#fff;
+        padding:125px 16px 125px 16px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    hr {
+        padding:0 30px 0  0;
+        margin:0;
+    }
+        
+        .block {
+            flex-basis: 49%;
+            background-color: #5e657d;
+            padding:65px 40px 40px 40px;
+            
+        }
+
+            .block__title {
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+                font-size: 20px;
+                margin:0;
+                padding-bottom:40px;
+            }
+
+            .block__list {
+                padding:0;
+                margin:0;
+            }
+            
+                .list__item__title{
+                    margin:0;
+                    padding-top:30px;
+                    font-weight:medium;
+                    font-size:18px;
+                }
+
+                .list__item__subtitle {
+                    margin:0;
+                    padding:20px 0;
+                    font-size: 16px;
+                    color: #d1d1d8;
+                    font-weight: normal;
+                }
+
+                    .list__item__subtitle span {
+                        text-transform: uppercase;
+                    }
+
+                .list__item__description {
+                    margin:0;
+                    padding-bottom: 30px;
+                    font-size: 15px;
+                    color: #d1d1d8;
+                    font-weight: normal;
+                }
+
+                
+
+
+
+
+
+
+    /*END WORK AND EDUCATION SECTION */
 
 
 
