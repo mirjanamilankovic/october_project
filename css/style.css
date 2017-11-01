@@ -248,7 +248,7 @@ header .wrap {
 
             .introduction__content2 {
                 font-size: 12px;
-                margin-top:15px;
+                margin: 15px 0;
             }
 
   
@@ -275,7 +275,6 @@ header .wrap {
         .process__title {
             text-align:center;
             color:#99ddf9;
-            font-weight: bold; 
             margin:0;  
             font-weight: normal;
             font-size: 37px;
@@ -288,7 +287,6 @@ header .wrap {
             text-align: center;
             font-weight: normal;
             color:#383232;
-            color:#;
             padding-top:40px;
             margin-top:0;
             font-size:18px;
@@ -351,7 +349,7 @@ header .wrap {
 
 @media (max-width:760px) and (min-width:470px) {
     .process {
-        padding-top:30px;
+        padding:50px 0;
     }
 }
 
@@ -374,9 +372,7 @@ header .wrap {
             margin-bottom: 10px;
         }
 
-    .process {
-        padding-top: 30px;
-    }
+    
 
         .process__title {
             font-size: 22px;
@@ -389,8 +385,8 @@ header .wrap {
 }
 
 
-
 /* END RESPONSIVE FOR WORKING PROCESS*/
+/*END WORKING PROCESS*/
 
 
 /*START WORK AND EDUCATION SECTION */
@@ -470,14 +466,211 @@ header .wrap {
                     font-weight: normal;
                 }
 
+/*START RESPONSIVE FOR WORK AND EDUCATION SECTION */
+
+@media only screen and (max-width:580px) and (min-width:440px) {
+    .process {
+        padding-bottom: 30px;
+    }
+    .info__blocks {
+        padding:30px 16px 30px 16px;
+    }  
+
+        .block {
+            flex-basis: 100%;
+            padding:10px;
+            text-align: center;
+        }
+      
+            .block__title {
+                text-align: center;
+                padding:20px;
                 
+            }
+}
+
+@media only screen and (max-width:439px) {
+    .process {
+        padding: 20px 0 10px 0;
+    }
+    .info__blocks {
+        padding:10px;
+    }
+
+        .block {
+            flex-basis: 100%;
+            padding:10px;
+            text-align: center;
+        }
+
+            .block__title {
+                text-align: center;
+                padding:20px;
+                
+            }
+
+                .list__item__title {
+                    padding-top:10px;
+                    font-size: 14px;
+                }
+
+                .list__item__subtitle {
+                    font-size: 13px;
+                    padding:10px 0;
+                }
+
+                .list__item__description {
+                    font-size: 12px;
+                    padding-bottom: 10px;
+                }
+}
+
+/*END RESPONSIVE FOR WORK AND EDUCATION SECTION */
+                
+/*END WORK AND EDUCATION SECTION */
+
+/*START PORTOFOLIO SECTION */
+
+.portofolio {
+    background-color:#ffffff;
+    padding:125px 0;
+}
+
+    .portofolio__description {
+        font-family: Roboto;
+        padding:0 16px;
+    }
+
+        .portofolio__title {
+            text-align: center;
+            color:#000000;
+            font-weight: 700;
+            font-size:37px;
+            letter-spacing: 2px;
+            margin:0;
+            padding-bottom: 70px;
+        }
+
+        .portofolio__subtitle {
+            text-align: center;
+            font-weight: normal;
+            color:#383232;
+            margin-top:0;
+            font-size:18px;
+            margin:0;
+        }
+    
+    .portofolio__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        padding:60px 16px 120px 16px;
+    }
+
+        
+        .portofolio__items__box {
+            background:blue;
+            flex-basis: 24%;
+            color:#fff;
+            min-height:200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:10px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+            .portofolio__items__box:nth-child(1) {
+                background:#10c6fc
+            }
+
+            .portofolio__items__box:nth-child(2) {
+                background-color:#835aeb;
+            }
+
+            .portofolio__items__box:nth-child(3) {
+                background-color:#002453 
+            }
+
+            .portofolio__items__box:nth-child(4) {
+                background-color: #ff2b4a;
+            }
+
+            .portofolio__items__box:nth-child(5) {
+                background-color: #835aeb;
+                flex-basis: 49.4%;
+            }
+
+            .portofolio__items__box:nth-child(6) {
+                background-color: #002453;
+
+            }
+
+            .portofolio__items__box:nth-child(7) {
+                background-color: #ff2b4a;
+            }
+
+/*START RESPONSIVE FOR PORTOFOLIO SECTION */
+@media only screen and (max-width:630px) and (min-width:420px) {
+
+    .portofolio {
+        padding-top:32px;
+    }
+        .portofolio__title {
+            padding-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .portofolio__subtitle {
+            font-size: 15px;
+        }
+
+        .portofolio__items {
+            padding-bottom: 30px;
+        }
+
+            .portofolio__items__box {
+                flex-basis: 49%;
+                margin-right:1%;
+            }
+
+                .portofolio__items__box:nth-child(5) {
+                    flex-basis: 100%;
+                }
+}
+
+@media only screen and (max-width:419px) {
+    .portofolio {
+        padding-top:32px;
+    }
+        .portofolio__title {
+            padding-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .portofolio__subtitle {
+            font-size: 15px;
+        }
+
+        .portofolio__items {
+            padding:30px 0;
+        }
+
+            .portofolio__items__box {
+                flex-basis: 100%;
+            }
+
+                .portofolio__items__box:nth-child(5) {
+                    flex-basis: 100%;
+                }
+}
 
 
-
-
-
-
-    /*END WORK AND EDUCATION SECTION */
+/*START RESPONSIVE FOR PORTOFOLIO SECTION */
+/*END PORTOFOLIO SECTION */
 
 
 
@@ -491,5 +684,5 @@ header .wrap {
 
 
 
-/*END WORKING PROCESS*/
+
 /*End Article*/
