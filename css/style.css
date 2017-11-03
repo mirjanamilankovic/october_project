@@ -491,7 +491,7 @@ header .wrap {
 
 @media only screen and (max-width:439px) {
     .process {
-        padding: 20px 0 10px 0;
+        padding: 20px 0 20px 0;
     }
     .info__blocks {
         padding:10px;
@@ -565,6 +565,8 @@ header .wrap {
         justify-content: space-between;
         flex-wrap:wrap;
         padding:60px 16px 120px 16px;
+        font-family: Roboto;
+   
     }
 
         
@@ -578,9 +580,10 @@ header .wrap {
             justify-content: center;
             align-items: center;
             padding:10px;
-            letter-spacing: 2px;
             margin-bottom: 10px;
             text-align: center;
+            font-size:20px;
+            font-weight: 500;
         }
 
             .portofolio__items__box:nth-child(1) {
@@ -633,8 +636,7 @@ header .wrap {
         }
 
             .portofolio__items__box {
-                flex-basis: 49%;
-                margin-right:1%;
+                flex-basis: 49.4%;
             }
 
                 .portofolio__items__box:nth-child(5) {
@@ -672,17 +674,212 @@ header .wrap {
 /*START RESPONSIVE FOR PORTOFOLIO SECTION */
 /*END PORTOFOLIO SECTION */
 
+/*START FORM SECTION*/
+.contact__form {
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#796b7b+2,30697d+47,826b7b+100 */
+     background: #796b7b; /* Old browsers */
+     background: -moz-linear-gradient(45deg, #796b7b 2%, #30697d 47%, #826b7b 100%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(45deg, #796b7b 2%,#30697d 47%,#826b7b 100%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(45deg, #796b7b 2%,#30697d 47%,#826b7b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#796b7b', endColorstr='#826b7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+     font-family: Roboto;
+}
 
+    .contact__form__blocks {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        padding:125px 16px 125px 16px;
+    }
 
-
+        .message__form {
+            flex-basis: 49%;
+            background-color: #5e657d;
+            flex-direction: column;
+            padding:60px 40px 60px 40px;
+            font-family: Roboto;
         
+        }
+        
+            .message__form__title {
+                font-family: Raleway;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: white;
+                letter-spacing: 1px;
+               
 
+            }
 
+            input {
+                border:solid #c1c2cb 1px;
+                margin-bottom: 20px;
+                width: 100%;   
+                min-height: 50px;
+                background: none;
+                color:#ffff;
+                padding-left:10px;
+            }
 
+                input::placeholder {
+                    color:#c1c2cb;
+                    font-size: 12px;
+                    padding-left: 10px;
+                }
+/*
+                input:placeholder-shown {
+                    color:white;
+                    padding-left:10px;
+                }
+Klaudio da pogleda */
 
+       
+            .contact__form__message {
+                min-height: 200px;
+                display:inline-block;
+                
+            }
+                
+                
+        .contact__info {
+            flex-basis: 49%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color:white;
+            font-family: Roboto;  
+        }
 
+            .contact__adress {
+                flex-basis:100%;
+                margin-bottom:10px;
+                background-color: #5e657d;
+                padding:60px 40px 60px 40px;
+            }
 
+                .contact__adress__title {
+                    font-family: Raleway;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: white;
+                    letter-spacing: 1px;     
+                }
 
+                .contact__adress__subtitle {
+                    font-weight: normal;
+                    margin:0;
+                }
 
+            .contact__phone {
+                flex-basis:100%;
+                margin-bottom:10px;
+                background-color: #5e657d;
+                padding:60px 40px 60px 40px;
 
+            }
+
+                .contact__phone__title {
+                    font-family: Raleway;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: white;
+                    letter-spacing: 1px;
+                }
+
+                .contact__phone__subtitle {
+                    font-weight: normal;
+                    margin:0;
+                }
+
+            .contact__email {
+                flex-basis:100%;
+                background-color: #5e657d;
+                padding:60px 40px 60px 40px;
+            }
+
+                .contact__email__title {
+                    font-family: Raleway;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: white;
+                    letter-spacing: 1px;
+                }
+
+                .contact__email__subtitle {
+                    font-weight: normal;
+                    margin:0;
+                }
+/* START RESPONSIVE FOR FORM SECTION */
+
+@media only screen and (max-width:780px) and (min-width:600px) {
+
+    .message__form {
+        flex-basis: 65%;
+    }
+    .contact__info {
+        flex-basis: 34%;
+    }
+
+        .contact__adress {
+            padding:60px 10px 10px 10px;
+            font-size: 14px;
+        }
+
+        .contact__phone {
+            padding:60px 10px 10px 10px;
+            font-size: 14px;
+        }
+
+        .contact__email {
+            padding:60px 10px 10px 10px;
+            font-size: 14px;
+        }
+}
+
+@media only screen and (max-width:599px) {
+
+    .contact__form__blocks {
+        padding: 30px 16px 30px 16px;
+    }
+
+        .message__form {
+            flex-basis: 100%;
+            padding:20px;
+        }
+
+        .contact__info {
+            flex-basis: 100%;
+            margin-top:30px;
+            
+        }
+
+            .contact__adress {
+                padding: 20px;
+                font-size: 14px;
+            }
+
+            .contact__phone {
+                padding: 20px;
+                font-size: 14px;
+            }
+
+            .contact__email {
+                padding: 20px;
+                font-size: 14px;
+            }
+    .portofolio {
+        padding-bottom: 0;
+    }
+}
+
+/*END RESPONSIE FOR FORM SECTION */
+/*END FORM SECTION*/
 /*End Article*/
+
+/*START FOOTER*/
+
+#contentinfo {
+    background-color:#222222;
+}
+
+/*END FOOTER*/
