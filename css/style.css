@@ -564,7 +564,7 @@ header .wrap {
         display: flex;
         justify-content: space-between;
         flex-wrap:wrap;
-        padding:60px 16px 120px 16px;
+        padding:60px 16px;
         font-family: Roboto;
    
     }
@@ -707,8 +707,6 @@ header .wrap {
                 text-transform: uppercase;
                 color: white;
                 letter-spacing: 1px;
-               
-
             }
 
             input {
@@ -717,7 +715,7 @@ header .wrap {
                 width: 100%;   
                 min-height: 50px;
                 background: none;
-                color:#ffff;
+                color:#fff;
                 padding-left:10px;
             }
 
@@ -726,19 +724,43 @@ header .wrap {
                     font-size: 12px;
                     padding-left: 10px;
                 }
-/*
-                input:placeholder-shown {
-                    color:white;
+            textarea {
+                color:#fff;
+                font-family: Roboto;
+                padding-left:10px;
+               
+            }
+
+                textarea::placeholder {
+                    color:#c1c2cb;
+                    font-size: 12px;
                     padding-left:10px;
+                    font-family: Roboto;
                 }
-Klaudio da pogleda */
 
        
             .contact__form__message {
                 min-height: 200px;
                 display:inline-block;
-                
+                width:100%;
+                background:none;
+                color:#ffff; 
+                padding:10px 0 0 10px;   
             }
+
+            .contact__form__submit {
+                width: 200px;
+                margin: 20px auto;
+                display: block;
+                text-transform: uppercase;
+                outline: 0;
+            }
+
+                .contact__form__submit:hover {
+                    background: #ff2b4a;
+                    border: solid 1px #ff2b4a;
+                    outline: 0;
+                }
                 
                 
         .contact__info {
@@ -880,6 +902,43 @@ Klaudio da pogleda */
 
 #contentinfo {
     background-color:#222222;
+    min-height: 150px;
 }
+
+    .footer__content {
+        padding:50px 16px 0 16px;
+        text-align: center;
+        font-family: Roboto;
+    }
+
+        .content__icon__one {
+            fill: #ff2b4a;    
+        }
+
+            .content__icon__one:hover {
+                width:32px;
+                height:32px;
+            }
+    .content__icon__two {
+            fill:#aaaaaa;
+            margin-left: 30px;
+        }
+
+            .content__icon__two:hover {
+                width:32px;
+                height:32px;
+            }
+            
+          
+            .footer__content__text {
+                color:#919191;
+                font-weight: 300;
+                font-size:12px;
+                margin:0;
+                padding-top:20px;
+            }
+
+
+
 
 /*END FOOTER*/
